@@ -17,7 +17,8 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.custom-scrollbar.css">
     
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
@@ -46,6 +47,13 @@ a#scroll{
     right:10px;
     bottom:10px;
     cursor:pointer;
+}
+.project-image{
+	height: 100px;
+	width: 100px;
+}
+.latest .item {
+    margin-bottom: 15px;
 }
 </style>
 <body>
@@ -127,7 +135,59 @@ a#scroll{
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-            </div><!--//primary-->
+				
+				<section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+						<div class="content">
+							<h2 class="heading">Achievements</h2>
+								<div class="scrollBox custom-skin" style="height:600px">
+									<div class="item row cert">
+										<div class="col-12">
+											<table border="0" style="margin-bottom:5px">
+												<tr>
+													<td><img class="project-image" src="assets/images/certifications/SQL_badge.png" alt="project name"/></td>
+													<td style="padding-left:10px"><h3 class="title"><a href="#">SQL - Gold Level</a></h3></td>
+												</tr>
+											</table>
+										</div>
+										<div class="desc col-12">
+											<p class="mb-2">Achieved a gold level in SQL on Hackerrank for solving numerous complex challenges using Microsoft's T-SQL. Problems included using Common Table Expressions for sorting, ordering, and fetching N results from multiple joins.</p>
+										</div><!--//desc-->                          
+									</div><!--//item-->
+									<div class="item row cert">
+										<div class="col-12">
+											<table border="0" style="margin-bottom:5px">
+												<tr>
+													<td><img class="project-image" src="assets/images/certifications/AppDS_Python.png" alt="project name" /></td>
+													<td style="padding-left:10px"><h3 class="title"><a href="https://www.youracclaim.com/badges/a41c0167-4225-41d5-8ab0-806acde2f0ef/linked_in_profile" target="_blank" title="Verify">Applied Data Science with Python - Level 2</a></h3></td>
+												</tr>
+											</table>
+										</div>
+										<div class="desc col-12">
+											<p class="mb-2">Earned this badge from IBM's CognitiveClass.ai for demonstrating an ability to code in Python for data science. This badge was earned on my ability to analyze and visualize data using Python with packages like scikit-learn, matplotlib and bokeh.</p>
+										</div><!--//desc-->                          
+									</div><!--//item-->
+									<div class="item row cert">
+										<div class="col-12">
+											<table border="0" style="margin-bottom:5px">
+												<tr>
+													<td><img class="project-image" src="assets/images/certifications/DS_Business.png" alt="project name" /></td>
+													<td style="padding-left:10px"><h3 class="title"><a href="https://www.youracclaim.com/badges/4e703323-a60f-4f6f-94f3-18c49c8b511d/linked_in_profile" target="_blank" title="Verify">Data Science for Business - Level 2</a></h3></td>
+												</tr>
+											</table>
+										</div>
+										<div class="desc col-12">
+											<p class="mb-2">Earned this badge from IBM's CognitiveClass.ai for demonstrating an ability to understand the concepts of data privacy, digital analytics and regression, and predictive modeling.</p>
+										</div><!--//desc-->                          
+									</div><!--//item-->
+								</div>
+								
+							<!--<center><a class="btn btn-cta-secondary" href="#" id="loadMore_cert" style="background-color: #7CCD7C">Show more</a></center>-->
+						</div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            
+			</div><!--//primary-->
             
 			<div class="secondary col-lg-8 col-12">
                 <section class="projects section">
@@ -159,11 +219,12 @@ a#scroll{
                                 <p class="summary">A regression model, implemented using XBoost algorithm, trained on different aspects of the customer like his details, the purchased product details, total purchase amount, etc. that predicts the purchase amount of customer against various products which will help them to create personalized offer for customers against different products. Dataset consists of 9 variables and over 500,000 observations. The model is tuned to reduce the RMSE in predictions.</p>
                             </div><!--//item-->
 							
-                            <center><a class="btn btn-cta-secondary" href="#" id="loadMore" style="background-color: #7CCD7C">Show more</a></center>
+                            <!--<center><a class="btn btn-cta-secondary" href="#" id="loadMore_projects" style="background-color: #7CCD7C">Show more</a></center>-->
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+				
             </div><!--//secondary-->    
         </div><!--//row-->
 		<a href="#" id="scroll" style="display: none;" title="Back to top"><img src="assets/images/scrollToTop.png" height="50px" width="50px" /></a>
@@ -182,13 +243,11 @@ a#scroll{
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+	<script type="text/javascript" src="assets/js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+	
 </body>
 </html> 
 
