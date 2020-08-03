@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
     
 	// Create custom scrollbar for Achievements section
-	$(".scrollBox").customScrollbar({
-		fixedThumbHeight:50,
-		fixedThumbWidth:10,
-		animationSpeed:0
-	});
+	
+	$(".scrollBox").mCustomScrollbar({
+		theme: "minimal-dark",
+		scrollInertia: 250
+	})
 	
 	// Show and hide the arrow for scrolling
 	$(window).scroll(function(){ 
